@@ -41,7 +41,7 @@ Claude Code 開一堆、Codex 開一堆，每個都是獨立視窗，桌面亂�
 
 ## 把錢花在刀口上
 
-終端機原本有「續快取」的機制：快取快過期前，用很短的一句話把它續下去，就能一直付比較便宜的快取價。後來發現自己很少用，不如閒著的時候直接把對話壓縮。剛好 Claude Code 推出了 mods，就 vibe 了一個「閒置 55 分鐘自動壓縮」的 mod。最近 Claude Code 也內建了類似的功能，不過只在對話很長時才會壓，平常還是靠這個 mod。
+終端機原本有「續快取」的機制：快取快過期前，用很短的一句話把它續下去，就能一直付比較便宜的快取價。後來發現自己很少用，不如閒著的時候直接把對話壓縮。剛好 Claude Code 推出了 mods，就 vibe 了一個「閒置 55 分鐘自動壓縮」的 mod：[auto-compact](https://github.com/u6vu06Ou/auto-compact)，視窗底下還看得到上次是幾點壓的。最近 Claude Code 也內建了類似的功能，不過只在對話很長時才會壓，平常還是靠這個 mod。
 
 從此幾乎不再付快取以外的原價，終於可以開著語音一直 vibe coding，很 chill。
 
@@ -63,6 +63,7 @@ Claude Code 開一堆、Codex 開一堆，每個都是獨立視窗，桌面亂�
 | [llm-council](https://github.com/u6vu06Ou/llm-council) | 讓幾個模型開會、互相審查再決議 |
 | [parallel-guard](https://github.com/u6vu06Ou/parallel-guard) | 派幫手前先看電腦撐不撐得住；做完的工作副本一鍵收 |
 | [ai-memory](https://github.com/u6vu06Ou/ai-memory) | 對話摘要進同一個筆記庫，兩步查詢，查不到就說沒有 |
+| [auto-compact](https://github.com/u6vu06Ou/auto-compact) | 閒置 55 分鐘自動壓縮對話，狀態列顯示上次壓縮時間 |
 | [time-sense](https://github.com/u6vu06Ou/time-sense) | 讓 AI 有時間感 |
 | [chrome-md](https://github.com/u6vu06Ou/chrome-md) | 把網頁存成給 AI 讀的 Markdown |
 | [learned-rules](https://github.com/u6vu06Ou/learned-rules) | 讓 AI 從踩過的坑學習 |
