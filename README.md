@@ -12,6 +12,10 @@
 
 這下可以安心開很多視窗了，輪到電腦運作不良：記憶體、CPU 經常被吃滿。[parallel-guard](https://github.com/u6vu06Ou/parallel-guard) 讓 AI 在派生子代理之前先看一眼這台機器的狀況（同一台電腦所有視窗合計一個上限），資源不夠就緩一緩；用完的 git 工作副本也能一鍵安全收掉。
 
+## 開這麼多視窗，總得有人記得你
+
+對話開到後來一定撞到同一堵牆：context 就那麼大，聊久了前面講的就開始掉；而每個專案資料夾各留各的筆記，時間一長根本管不動，要找東西像翻舊帳。於是我反過來做：讓所有對話每晚自己歸檔——摘要集中進同一個 Obsidian vault（一個純 Markdown 的筆記庫），再把 agent 接上去查。查東西分兩步：先只回一張一行一筆的命中清單，真的需要的幾條才展開全文；查不到就直說查不到，不硬掰。這套叫 ai-memory，即將開源。做完之後最大的感受是：不管你在哪個視窗、隔了幾天再開口，跟他說話都像在跟同一個記得你的人講。
+
 ## 最爽的玩法：讓最聰明的模型當隊長
 
 用了一陣子還是不過癮——花費少、用得開心，但畢竟不是最聰明的模型在帶領。於是我用 claude-team-router 做出等同原生 agent team 的多工派工：一線主流模型當隊長，其他便宜模型當隊員。
@@ -44,8 +48,9 @@
 | chrome-md | 把網頁存成給 AI 讀的 Markdown 的 Chrome 擴充 | [github.com/u6vu06Ou/chrome-md](https://github.com/u6vu06Ou/chrome-md) |
 | learned-rules | 讓 AI 從自己踩過的坑學習，開場只給標題目錄 | [github.com/u6vu06Ou/learned-rules](https://github.com/u6vu06Ou/learned-rules) |
 | Codex 版 team 派工 | team 機制的 Codex 對應版 | 即將開源 |
+| ai-memory | 每晚把對話摘要進同一個 Obsidian vault、兩步式召回的記憶系統 | 即將開源 |
 | auto-compact | 對話閒置 55 分鐘自動壓縮、狀態列顯示倒數的 mod | 即將開源 |
 
 ## English
 
-Everything here started with wanting to spend fewer tokens. I found that lesser-known, cheap models become much more useful once they run inside the Claude Code or Codex harness, so I built [claude-team-router](https://github.com/u6vu06Ou/claude-team-router) to route cheap model APIs into those harnesses (projects like claude-code-router and LiteLLM exist—this is just my personal take). [coterm](https://github.com/u6vu06Ou/coterm) is the terminal I wrote for juggling many AI windows at once; [llm-council](https://github.com/u6vu06Ou/llm-council) has several models review each other's work; [parallel-guard](https://github.com/u6vu06Ou/parallel-guard) stops AI agents from spawning when your machine's resources are already maxed out. Most fun of all: a frontier model acts as team lead delegating to cheaper models—all sharing the same harness, calling each other by @name—while an auto-compact mod (open-sourcing soon) keeps sessions cheap enough to vibe code by voice all day. The odds and ends ([time-sense](https://github.com/u6vu06Ou/time-sense), [chrome-md](https://github.com/u6vu06Ou/chrome-md), [learned-rules](https://github.com/u6vu06Ou/learned-rules)) are things I made along the way; feel free to ask your AI to build you one too.
+Everything here started with wanting to spend fewer tokens. I found that lesser-known, cheap models become much more useful once they run inside the Claude Code or Codex harness, so I built [claude-team-router](https://github.com/u6vu06Ou/claude-team-router) to route cheap model APIs into those harnesses (projects like claude-code-router and LiteLLM exist—this is just my personal take). [coterm](https://github.com/u6vu06Ou/coterm) is the terminal I wrote for juggling many AI windows at once; [llm-council](https://github.com/u6vu06Ou/llm-council) has several models review each other's work; [parallel-guard](https://github.com/u6vu06Ou/parallel-guard) stops AI agents from spawning when your machine's resources are already maxed out. Most fun of all: a frontier model acts as team lead delegating to cheaper models—all sharing the same harness, calling each other by @name—while an auto-compact mod (open-sourcing soon) keeps sessions cheap enough to vibe code by voice all day. And because these conversations pile up faster than any context window, ai-memory (also open-sourcing soon) summarizes everything nightly into a single Obsidian vault with a two-step lookup—hit list first, full text only on demand—so the agent feels like the same person who remembers you, no matter which window you open. The odds and ends ([time-sense](https://github.com/u6vu06Ou/time-sense), [chrome-md](https://github.com/u6vu06Ou/chrome-md), [learned-rules](https://github.com/u6vu06Ou/learned-rules)) are things I made along the way; feel free to ask your AI to build you one too.
