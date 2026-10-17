@@ -22,7 +22,7 @@
 
 ## 把價格打下來之後，才敢放開手玩
 
-終端機本來有「自動續快取」——快取到期前用極短的一句話延續，享受較低的快取價。但我發現自己很少真的用到，不如把錢花在刀口上。剛好 Claude Code 推出 mods，就寫了一個 auto-compact（即將開源）：55 分鐘自動壓縮對話，視窗底部顯示倒數。從此幾乎不再付快取以外的原價，終於可以用語音一直 vibe coding，很 chill。
+終端機本來有「自動續快取」——快取到期前用極短的一句話延續，享受較低的快取價。但我發現自己很少真的用到，不如把錢花在刀口上。剛好 Claude Code 推出 mods，就寫了一個 auto-compact（即將開源）：對話閒置 55 分鐘就自動壓縮，每往來一輪，計時器就歸零重計；視窗底下的狀態列可以看到倒數（mod 附帶的小腳本提供的）。從此幾乎不再付快取以外的原價，終於可以用語音一直 vibe coding，很 chill。
 
 ## 一些小插曲
 
@@ -44,7 +44,7 @@
 | chrome-md | 把網頁存成給 AI 讀的 Markdown 的 Chrome 擴充 | [github.com/u6vu06Ou/chrome-md](https://github.com/u6vu06Ou/chrome-md) |
 | learned-rules | 讓 AI 從自己踩過的坑學習，開場只給標題目錄 | [github.com/u6vu06Ou/learned-rules](https://github.com/u6vu06Ou/learned-rules) |
 | Codex 版 team 派工 | team 機制的 Codex 對應版 | 即將開源 |
-| auto-compact | 55 分鐘自動壓縮對話、視窗底部倒數的 mod | 即將開源 |
+| auto-compact | 對話閒置 55 分鐘自動壓縮、狀態列顯示倒數的 mod | 即將開源 |
 
 ## English
 
