@@ -15,6 +15,8 @@ Claude Code、Codex 這些外殼（harness）非常強。反過來，用不出�
 
 Claude Code 開一堆、Codex 開一堆，每個都是獨立視窗，桌面亂到自己看了都難受。所以又 vibe 了一個自己用的終端機 [coterm](https://github.com/u6vu06Ou/coterm)：一個視窗裡同時跑好幾個 AI，看得到每個在幹嘛。
 
+它也特別照顧手機。透過 Tailscale 連回家裡的電腦，手機上就能操作整個終端機；用手機拍張照傳進視窗，它會變成電腦上的一個檔案路徑，AI 直接就能看。手機本來就有語音輸入，躺著講話就能派工，非常方便。
+
 便宜模型畢竟不是主流模型，出錯率高，一鑽進死胡同就一路歪下去。那就讓幾個模型開會：互相提案、互相挑錯、再一起決定，這是 [llm-council](https://github.com/u6vu06Ou/llm-council)。
 
 可以放心開一堆視窗了，結果換電腦撐不住：記憶體、CPU 常常被吃滿。於是 vibe 了 [parallel-guard](https://github.com/u6vu06Ou/parallel-guard)：AI 要多派幫手之前，先看一眼這台電腦還撐不撐得住。同一台電腦所有視窗合計一個上限，做完的工作副本也能一鍵安全收掉。
