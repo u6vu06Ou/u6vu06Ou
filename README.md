@@ -1,6 +1,7 @@
 # u6vu06Ou
 
-> 這裡的東西全是 vibe coding 出來的。有價值的只有念頭，動手捏出來的都是 AI。故事從想省 token 開始。
+> 一個喜歡玩 AI infra、又愛省錢的 vibe 玩家。這裡的東西全是 vibe coding 出來的：有價值的只有念頭，動手捏出來的都是 AI。
+> 不是要推薦誰來用，只是樂於分享。覺得有趣就拿去，用不上也無所謂。故事從想省 token 開始。
 
 ## 一切從想省 token 開始
 
@@ -44,7 +45,7 @@ Claude Code 開一堆、Codex 開一堆，每個都是獨立視窗，桌面亂�
 - [chrome-md](https://github.com/u6vu06Ou/chrome-md)：把正在看的網頁存成給 AI 讀的 Markdown。
 - [learned-rules](https://github.com/u6vu06Ou/learned-rules)：讓 AI 從自己踩過的坑學習。開場只給標題清單，需要才展開，還附到期提醒。
 
-這些都是過程中冒出來的念頭。喜歡的話，叫你的 AI 也幫你捏一個。
+這些都是過程中冒出來的念頭。比起直接拿去用，更建議把念頭帶走，叫你的 AI 照你的習慣捏一個。
 
 ## 專案一覽
 
@@ -62,4 +63,4 @@ Claude Code 開一堆、Codex 開一堆，每個都是獨立視窗，桌面亂�
 
 ## English
 
-Everything here was vibe coded: the ideas are mine, the code was shaped by AI. It started with wanting to spend fewer tokens. Cheap, lesser-known models get much better once they run inside the Claude Code or Codex harness, so I vibed a proxy that translates their APIs for Claude Code; it grew into [claude-team-router](https://github.com/u6vu06Ou/claude-team-router) (tools like claude-code-router and LiteLLM do similar things — this is just the one I use). Too many windows led to [coterm](https://github.com/u6vu06Ou/coterm), a terminal for running many agents side by side. Error-prone models led to [llm-council](https://github.com/u6vu06Ou/llm-council), where models review each other. A machine running out of RAM and CPU led to [parallel-guard](https://github.com/u6vu06Ou/parallel-guard). Wanting agents to remember a lot without loading a huge memory file into every new session led to [ai-memory](https://github.com/u6vu06Ou/ai-memory): conversations summarized nightly into one Obsidian vault, searched on demand in two steps, and it says "nothing found" instead of guessing. The most fun setup: a frontier model as team lead, cheaper models as teammates, all in the same harness talking by @name — [claude-team-router](https://github.com/u6vu06Ou/claude-team-router) for Claude Code, [codex-team](https://github.com/u6vu06Ou/codex-team) for Codex. The rest ([time-sense](https://github.com/u6vu06Ou/time-sense), [chrome-md](https://github.com/u6vu06Ou/chrome-md), [learned-rules](https://github.com/u6vu06Ou/learned-rules)) are small ideas from along the way — ask your AI to build you one too.
+An AI-infra tinkerer who likes spending less. Everything here was vibe coded: the ideas are mine, the code was shaped by AI. Not a pitch — just sharing; use it or don't. It started with wanting to spend fewer tokens. Cheap, lesser-known models get much better once they run inside the Claude Code or Codex harness, so I vibed a proxy that translates their APIs for Claude Code; it grew into [claude-team-router](https://github.com/u6vu06Ou/claude-team-router) (tools like claude-code-router and LiteLLM do similar things — this is just the one I use). Too many windows led to [coterm](https://github.com/u6vu06Ou/coterm), a terminal for running many agents side by side. Error-prone models led to [llm-council](https://github.com/u6vu06Ou/llm-council), where models review each other. A machine running out of RAM and CPU led to [parallel-guard](https://github.com/u6vu06Ou/parallel-guard). Wanting agents to remember a lot without loading a huge memory file into every new session led to [ai-memory](https://github.com/u6vu06Ou/ai-memory): conversations summarized nightly into one Obsidian vault, searched on demand in two steps, and it says "nothing found" instead of guessing. The most fun setup: a frontier model as team lead, cheaper models as teammates, all in the same harness talking by @name — [claude-team-router](https://github.com/u6vu06Ou/claude-team-router) for Claude Code, [codex-team](https://github.com/u6vu06Ou/codex-team) for Codex. The rest ([time-sense](https://github.com/u6vu06Ou/time-sense), [chrome-md](https://github.com/u6vu06Ou/chrome-md), [learned-rules](https://github.com/u6vu06Ou/learned-rules)) are small ideas from along the way — ask your AI to build you one too.
